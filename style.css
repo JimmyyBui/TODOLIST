@@ -1,0 +1,139 @@
+/* Cấu trúc chung */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng container chính */
+div {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Danh sách khóa học */
+ul#Danh-sach {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Mỗi item trong danh sách */
+ul#Danh-sach li {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Tạo hiệu ứng hover */
+ul#Danh-sach li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tiêu đề của từng khóa học */
+ul#Danh-sach li h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+/* Mô tả khóa học */
+ul#Danh-sach li p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: 8px;
+}
+
+/* Thiết kế form thêm khoá học */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Nút submit */
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Hiệu ứng hover và focus cho các input/textarea */
+input[type="text"]:hover, textarea:hover {
+    border-color: #0056b3;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+/* Thiết kế cho responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    form {
+        gap: 15px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
